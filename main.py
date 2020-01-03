@@ -1,6 +1,8 @@
 """
 _istimons
 
+This File Contains the user interface only.
+Database tests and logic is yet to be added.
 """
 
 __version__ = "1.0"
