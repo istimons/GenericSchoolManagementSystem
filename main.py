@@ -99,11 +99,11 @@ class Login(tk.Frame):  # Inheriting every frame we used
 
 class StartPage(tk.Frame):
     """
-    This widgets will be added to class methods.
-    This will make it easy to summarize each object functionality
+    This widgets will be added to class methods, instead of class instances.
+    This will make it easy to summarize each widget object functionality in multiprocessing, subprocessing or threading.
     (Widgets)
 
-     """
+    """
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
