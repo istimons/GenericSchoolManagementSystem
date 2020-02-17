@@ -1,8 +1,11 @@
 """
-_istimons
 
-This File Contains the user interface only.
-Database tests and logic is yet to be added.
+main.py
+
+This programs allows us to manage basics of a school dynamically.
+
+@Author _istimons
+@Date 08/2019
 
 """
 
