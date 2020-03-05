@@ -281,21 +281,26 @@ class SearcResults(tk.Frame):  # Inheriting every frame we used
         self.footerLabel.place(relx=0.0, rely=0.96, relheight=0.05, relwidth=1.0)
 
 
-app = AppUI()
+def main():
+    app = AppUI()
 
-# Get the root window screen width and height
-w = 800  # width for the Tk root
-h = 500  # height for the Tk root
+    # Get the root window screen width and height
+    w = 800  # width for the Tk root
+    h = 500  # height for the Tk root
 
-# get screen width and height
-ws = app.winfo_screenwidth()  # width of the screen
-hs = app.winfo_screenheight()  # height of the screen
+    # get screen width and height
+    ws = app.winfo_screenwidth()  # width of the screen
+    hs = app.winfo_screenheight()  # height of the screen
 
-# calculate x and y coordinates for the Tk root window
-x = (ws / 2) - (w / 2)
-y = (hs / 2) - (h / 2)
+    # calculate x and y coordinates for the Tk root window
+    x = (ws / 2) - (w / 2)
+    y = (hs / 2) - (h / 2)
 
-app.geometry('%dx%d+%d+%d' % (w, h, x, y))
-app.update_idletasks()
-app.update()
-app.mainloop()
+    app.geometry('%dx%d+%d+%d' % (w, h, x, y))
+    app.update_idletasks()
+    app.update()
+    app.mainloop()
+
+
+if __name__ == '__main__':
+    main()
